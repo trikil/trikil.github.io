@@ -1,0 +1,93 @@
+@import "reset";
+@import "color";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+:root {
+    --char-width: 0.6em;
+    --line-height: 1.5;
+    --font-size: 16px;
+    --line: calc(var(--font-size) * var(--line-height))
+}
+
+body {
+    background-color: var(--base3);
+    color: var(--base00);
+    font-family: "Noto Sans Mono", monospace;
+    line-height: var(--line-height);
+    margin: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--base02);
+    margin: var(--line) 0;
+}
+
+a {
+    color: var(--blue);
+}
+
+ol {    
+    margin-left: calc(4 * var(--char-width));
+    list-style-type: decimal;
+}
+
+ul {
+    margin-left: calc(2 * var(--char-width));
+
+    > li::before {
+        content: "• ";
+        color: var(--base1)
+    }
+}
+
+hr {
+    margin: 0;
+    border: none;
+}
+
+hr::after {
+    content: "***";
+    display: block;
+    text-align: center;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+code {
+    background-color: var(--base2);
+    border-radius: 5px;
+}
+
+img {
+    margin: var(--line) 0;
+}
+
+blockquote {
+    margin: var(--line) 0;
+    padding-left: calc(3.8 * var(--char-width));
+    margin-left: calc(0.2 * var(--char-width));
+    border-left: 2px solid var(--red);
+}
+
+table {
+    margin: calc(var(--line) * 3 / 2 - 1px) calc(var(--char-width) - 1px);
+    border: 2px solid var(--base00);
+}
+
+th, td {
+    padding: calc(var(--line) / 2 - 1px) calc(var(--char-width) - 1px);
+    border: 2px solid var(--base00);
+    border-collapse: collapse;
+}
+
+pre {
+    margin: var(--line) 0;
+}
