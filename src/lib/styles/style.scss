@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
 :root {
     --char-width: 0.6em;
     --line-height: 1.5;
@@ -11,11 +15,14 @@
 }
 
 body {
-    background-color: var(--base3);
     color: var(--base00);
     font-family: "Noto Sans Mono", monospace;
     line-height: var(--line-height);
-    margin: 50px;
+}
+
+html, body {
+    min-height: 100vh;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
